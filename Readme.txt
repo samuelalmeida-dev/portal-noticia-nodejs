@@ -1,3 +1,3 @@
-Arendendo NodeJs e Github 
+Aprendendo NodeJs e Git/Github 
 
-Criação de um portal de notícias
+Criação de um portal de notícias em NodeJs.
