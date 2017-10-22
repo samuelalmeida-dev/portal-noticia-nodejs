@@ -1,0 +1,20 @@
+{
+  "name": "curso-node",
+  "version": "1.0.0",
+  "description": "Arendendo NodeJs e Github",
+  "main": "noticias.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelalmeida-dev/portal-noticia-nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuelalmeida-dev/portal-noticia-nodejs/issues"
+  },
+  "homepage": "https://github.com/samuelalmeida-dev/portal-noticia-nodejs#readme"
+}
