@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/samuelalmeida-dev/portal-noticia-nodejs/issues"
   },
-  "homepage": "https://github.com/samuelalmeida-dev/portal-noticia-nodejs#readme"
+  "homepage": "https://github.com/samuelalmeida-dev/portal-noticia-nodejs#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
 }
