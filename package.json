@@ -19,6 +19,7 @@
   "homepage": "https://github.com/samuelalmeida-dev/portal-noticia-nodejs#readme",
   "dependencies": {
     "ejs": "^2.5.7",
-    "express": "4.14.0"
+    "express": "4.14.0",
+    "mysql": "^2.15.0"
   }
 }
