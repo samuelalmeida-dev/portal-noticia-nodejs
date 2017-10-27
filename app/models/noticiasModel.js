@@ -3,10 +3,12 @@ module.exports = () => {
         connection.query('select * from noticias', callback);
     }
 
-
-    this.getNoticia = (connection, callback ) => {
+    this.getNoticia = (connection, callback) => {
         connection.query('select * from noticias where id = 4', callback)
     }
 
+    this.salvarNoticia = (noticia, connection, callback) => {
+        connection.query('insert into noticias set ? ', noticia, callback);
+    }
     return this;
 }
