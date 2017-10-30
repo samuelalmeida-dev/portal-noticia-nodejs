@@ -9,14 +9,34 @@
 		<h1>Adicionar notícia</h1>
 		<br/>
 
-		<form action="noticia/salvar" method="POST">
+		<% if(validacao){ %>
+			<ul>
+				<% for (var i = 0; i < validacao.length; i++) { %>
+					<li><%= validacao[i].msg %></li>
+				<% } %>
+			</ul>
+		<%}%>
+
+		<form action="/noticia/salvar" method="POST">
 			
-			<label for="titulo">Título</label> <br/>
-			<input type="text" id="titulo" name="titulo">
+			<label for="titulo">Título da Notícia</label> <br/>
+			<input type="text" id="titulo" name="titulo" value="<%=noticia.titulo%>">
+			<br/><br/>
+
+			<label for="autor">Autor da Notícia</label> <br/>
+			<input type="text" id="autor" name="autor" value="<%=noticia.autor%>">
+			<br/><br/>
+
+			<label for="resumo">Resumo da Notícia</label> <br/>
+			<input type="text" id="resumo" name="resumo" value="<%=noticia.resumo%>">
 			<br/><br/>
 
 			<label for="noticia">Notícia</label> <br/>
-			<textarea id="noticia" name="noticia" rows="10" cols="20"></textarea>
+			<textarea id="noticia" name="noticia" rows="10" cols="20"><%=noticia.titulo%></textarea>
+			<br/><br/>
+
+			<label for="data_noticia">Data da Notícia</label><br/>
+			<input type="date" id="data_noticia" name="data_noticia" value="<%=noticia.data_noticia%>">
 			<br/><br/>
 
 			<button type="submit">Enviar</button>
